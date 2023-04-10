@@ -60,13 +60,133 @@ const GuestUser = () => {
             >
               <ul className="navbar-nav ms-auto mb-2 mb-md-0">
                 <li className="nav-item mx-md-3">
-                  <a
-                    className="nav-link text-white fw-bold"
-                    aria-current="page"
-                    href="#"
+                  <button
+                    type="button"
+                    class="nav-link btn text-white fw-bold"
+                    data-bs-toggle="modal"
+                    data-bs-target="#SignupModal"
                   >
                     Join Us
-                  </a>
+                  </button>
+
+                  <div
+                    class="modal fade"
+                    id="SignupModal"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="SignupModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header border-0">
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <form class="row g-3">
+                            <h2 className="text-center">Register</h2>
+                            <div class="col-md-6">
+                              <label for="inputEmail4" class="form-label">
+                                Email
+                              </label>
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="inputEmail4"
+                              />
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label">
+                                Password
+                              </label>
+                              <input
+                                type="password"
+                                class="form-control"
+                                id="inputPassword4"
+                              />
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label">
+                                Address
+                              </label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputAddress"
+                                placeholder="1234 Main St"
+                              />
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress2" class="form-label">
+                                Address 2
+                              </label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputAddress2"
+                                placeholder="Apartment, studio, or floor"
+                              />
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputCity" class="form-label">
+                                City
+                              </label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputCity"
+                              />
+                            </div>
+                            <div class="col-md-4">
+                              <label for="inputState" class="form-label">
+                                State
+                              </label>
+                              <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                              </select>
+                            </div>
+                            <div class="col-md-2">
+                              <label for="inputZip" class="form-label">
+                                Zip
+                              </label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputZip"
+                              />
+                            </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="gridCheck"
+                                />
+                                <label class="form-check-label" for="gridCheck">
+                                  Check me out
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-md-4 mx-auto">
+                              <button
+                                type="submit"
+                                class="btn btn-primary w-100"
+                              >
+                                Sign up
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li className="nav-item mx-md-3">
                   <a className="nav-link text-white fw-bold" href="#">
@@ -79,9 +199,88 @@ const GuestUser = () => {
                   </a>
                 </li>
                 <li className="nav-item mx-md-3">
-                  <a className="nav-link text-white fw-bold" href="">
+                  <button
+                    type="button"
+                    class="nav-link btn text-white fw-bold"
+                    data-bs-toggle="modal"
+                    data-bs-target="#SigninModal"
+                  >
                     Sign In
-                  </a>
+                  </button>
+
+                  <div
+                    class="modal fade"
+                    id="SigninModal"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="SigninModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header border-0">
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <form action="#" method="post">
+                            <div className="container">
+                              <h2 className="text-center">Login</h2>
+                              <div className="row">
+                                <div className="col-12">
+                                  <div className="mb-3">
+                                    <label
+                                      htmlFor="email"
+                                      className="form-label"
+                                    >
+                                      Email
+                                    </label>
+                                    <input
+                                      type="email"
+                                      name=""
+                                      id=""
+                                      className="form-control"
+                                      placeholrder="Enter your email"
+                                    />
+                                  </div>
+                                </div>
+                                <div className="col-12">
+                                  <div className="mb-3">
+                                    <label
+                                      htmlFor="passowrd"
+                                      className="form-label"
+                                    >
+                                      Password
+                                    </label>
+                                    <input
+                                      type="password"
+                                      name=""
+                                      id=""
+                                      className="form-control"
+                                      placeholrder="Enter your password"
+                                    />
+                                  </div>
+                                </div>
+                                <div className="col-md-4 mx-auto">
+                                  <button
+                                    type="button"
+                                    className="btn btn-primary w-100"
+                                  >
+                                    login
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li className="nav-item mx-md-3">
                   <form action="#" method="post">
