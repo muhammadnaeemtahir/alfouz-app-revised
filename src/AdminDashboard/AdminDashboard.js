@@ -13,6 +13,8 @@ import ViewRequests from "./ViewRequests";
 import CSP from "./CSP";
 import Grant from "./Grant";
 import NGOs from "./NGOs";
+import AllProjects from "./AllProjects";
+import AddProjects from "./AddProject";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -41,6 +43,8 @@ const AdminDashboard = () => {
                 <Route path="/csp-requests" element={<CSP />} />
                 <Route path="/grant-points" element={<Grant />} />
                 <Route path="/ngos" element={<NGOs />} />
+                <Route path="/all-projects" element={<AllProjects />} />
+                <Route path="/add-projects" element={<AddProjects />} />
               </Routes>
             </main>
           </div>

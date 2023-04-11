@@ -87,13 +87,13 @@ const Navbar = () => {
                 >
                   <div className="accordion-body bg-transparent">
                     <NavLink
-                      to="/admin-dashboard/"
+                      to="/admin-dashboard/all-projects"
                       className="nav-link fw-bold text-white"
                     >
                       All Projects
                     </NavLink>
                     <NavLink
-                      to="/admin-dashboard/"
+                      to="/admin-dashboard/add-projects"
                       className="nav-link fw-bold text-white"
                     >
                       Add Projects
@@ -178,7 +178,7 @@ const Navbar = () => {
             </div>
           </li>
 
-          <li className="nav-item mb-3">
+          {/* <li className="nav-item mb-3">
             <NavLink to="/admin-dashboard/" className="nav-link text-white">
               <div className="row g-0 align-items-center">
                 <div className="col-2">
@@ -192,7 +192,7 @@ const Navbar = () => {
                 </div>
               </div>
             </NavLink>
-          </li>
+          </li> */}
 
           <li className="nav-item mb-3">
             <NavLink to="/admin-dashboard/ngos" className="nav-link text-white">

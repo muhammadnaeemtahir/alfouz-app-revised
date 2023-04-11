@@ -66,12 +66,18 @@ const Header = () => {
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      <NavLink to="/admin-dashboard/" className="dropdown-item">
+                      <NavLink
+                        to="/admin-dashboard/all-projects"
+                        className="dropdown-item"
+                      >
                         All Projects
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/admin-dashboard/" className="dropdown-item">
+                      <NavLink
+                        to="/admin-dashboard/add-projects"
+                        className="dropdown-item"
+                      >
                         Add Project
                       </NavLink>
                     </li>

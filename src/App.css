@@ -84,7 +84,8 @@ aside {
     background-color: var(--color-cyan);
 }
 
-.partners .card {
+.partners .card,
+.card-gradient {
     background: linear-gradient(180deg, #142268 0%, #0A4E4E 100%);
 }
 

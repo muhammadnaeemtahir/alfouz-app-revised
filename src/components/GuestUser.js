@@ -1,36 +1,6 @@
 import { Link } from "react-router-dom";
 
 const GuestUser = () => {
-  const partners = [
-    {
-      name: "Alkhidmat",
-      logoURL: "../assets/logos/alkhidmat.png",
-      description: `Alkhidmat Foundation Pakistan is one of the leading,
-      non-profit organization, fully dedicated to humanitarian
-      services since 1990. Alkhidmat's workers and volunteers
-      continue to work tirelessly for the relief of affected people
-      across Pakistan and worldwide.`,
-    },
-    {
-      name: "Alkhidmat",
-      logoURL: "../assets/logos/alkhidmat.png",
-      description: `Alkhidmat Foundation Pakistan is one of the leading,
-      non-profit organization, fully dedicated to humanitarian
-      services since 1990. Alkhidmat's workers and volunteers
-      continue to work tirelessly for the relief of affected people
-      across Pakistan and worldwide.`,
-    },
-    {
-      name: "Alkhidmat",
-      logoURL: "../assets/logos/alkhidmat.png",
-      description: `Alkhidmat Foundation Pakistan is one of the leading,
-      non-profit organization, fully dedicated to humanitarian
-      services since 1990. Alkhidmat's workers and volunteers
-      continue to work tirelessly for the relief of affected people
-      across Pakistan and worldwide.`,
-    },
-  ];
-
   return (
     <>
       {/* hero section */}
@@ -60,133 +30,9 @@ const GuestUser = () => {
             >
               <ul className="navbar-nav ms-auto mb-2 mb-md-0">
                 <li className="nav-item mx-md-3">
-                  <button
-                    type="button"
-                    class="nav-link btn text-white fw-bold"
-                    data-bs-toggle="modal"
-                    data-bs-target="#SignupModal"
-                  >
+                  <Link className="nav-link text-white fw-bold" to="/join-us">
                     Join Us
-                  </button>
-
-                  <div
-                    class="modal fade"
-                    id="SignupModal"
-                    data-bs-backdrop="static"
-                    data-bs-keyboard="false"
-                    tabindex="-1"
-                    aria-labelledby="SignupModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header border-0">
-                          <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                          ></button>
-                        </div>
-                        <div class="modal-body">
-                          <form class="row g-3">
-                            <h2 className="text-center">Register</h2>
-                            <div class="col-md-6">
-                              <label for="inputEmail4" class="form-label">
-                                Email
-                              </label>
-                              <input
-                                type="email"
-                                class="form-control"
-                                id="inputEmail4"
-                              />
-                            </div>
-                            <div class="col-md-6">
-                              <label for="inputPassword4" class="form-label">
-                                Password
-                              </label>
-                              <input
-                                type="password"
-                                class="form-control"
-                                id="inputPassword4"
-                              />
-                            </div>
-                            <div class="col-12">
-                              <label for="inputAddress" class="form-label">
-                                Address
-                              </label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputAddress"
-                                placeholder="1234 Main St"
-                              />
-                            </div>
-                            <div class="col-12">
-                              <label for="inputAddress2" class="form-label">
-                                Address 2
-                              </label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputAddress2"
-                                placeholder="Apartment, studio, or floor"
-                              />
-                            </div>
-                            <div class="col-md-6">
-                              <label for="inputCity" class="form-label">
-                                City
-                              </label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputCity"
-                              />
-                            </div>
-                            <div class="col-md-4">
-                              <label for="inputState" class="form-label">
-                                State
-                              </label>
-                              <select id="inputState" class="form-select">
-                                <option selected>Choose...</option>
-                                <option>...</option>
-                              </select>
-                            </div>
-                            <div class="col-md-2">
-                              <label for="inputZip" class="form-label">
-                                Zip
-                              </label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputZip"
-                              />
-                            </div>
-                            <div class="col-12">
-                              <div class="form-check">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  id="gridCheck"
-                                />
-                                <label class="form-check-label" for="gridCheck">
-                                  Check me out
-                                </label>
-                              </div>
-                            </div>
-                            <div class="col-md-4 mx-auto">
-                              <button
-                                type="submit"
-                                class="btn btn-primary w-100"
-                              >
-                                Sign up
-                              </button>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  </Link>
                 </li>
                 <li className="nav-item mx-md-3">
                   <a className="nav-link text-white fw-bold" href="#">
@@ -199,88 +45,9 @@ const GuestUser = () => {
                   </a>
                 </li>
                 <li className="nav-item mx-md-3">
-                  <button
-                    type="button"
-                    class="nav-link btn text-white fw-bold"
-                    data-bs-toggle="modal"
-                    data-bs-target="#SigninModal"
-                  >
+                  <Link className="nav-link text-white fw-bold" to="/logins">
                     Sign In
-                  </button>
-
-                  <div
-                    class="modal fade"
-                    id="SigninModal"
-                    data-bs-backdrop="static"
-                    data-bs-keyboard="false"
-                    tabindex="-1"
-                    aria-labelledby="SigninModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header border-0">
-                          <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                          ></button>
-                        </div>
-                        <div class="modal-body">
-                          <form action="#" method="post">
-                            <div className="container">
-                              <h2 className="text-center">Login</h2>
-                              <div className="row">
-                                <div className="col-12">
-                                  <div className="mb-3">
-                                    <label
-                                      htmlFor="email"
-                                      className="form-label"
-                                    >
-                                      Email
-                                    </label>
-                                    <input
-                                      type="email"
-                                      name=""
-                                      id=""
-                                      className="form-control"
-                                      placeholrder="Enter your email"
-                                    />
-                                  </div>
-                                </div>
-                                <div className="col-12">
-                                  <div className="mb-3">
-                                    <label
-                                      htmlFor="passowrd"
-                                      className="form-label"
-                                    >
-                                      Password
-                                    </label>
-                                    <input
-                                      type="password"
-                                      name=""
-                                      id=""
-                                      className="form-control"
-                                      placeholrder="Enter your password"
-                                    />
-                                  </div>
-                                </div>
-                                <div className="col-md-4 mx-auto">
-                                  <button
-                                    type="button"
-                                    className="btn btn-primary w-100"
-                                  >
-                                    login
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  </Link>
                 </li>
                 <li className="nav-item mx-md-3">
                   <form action="#" method="post">
@@ -304,16 +71,16 @@ const GuestUser = () => {
 
         <div
           id="carouselExampleCaptions position-relative"
-          class="carousel slide"
+          className="carousel slide"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
               <img
                 src={require("../assets/images/flood.jpg")}
-                class="d-block w-100 img-fluid opacity-75"
+                className="d-block w-100 img-fluid opacity-75"
                 alt="..."
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <h1 className="fa-5x">
                   “The best among you are those who bring the greatest benefit
                   to others”
@@ -323,13 +90,13 @@ const GuestUser = () => {
                 </button>
               </div>
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <img
                 src={require("../assets/images/flood.jpg")}
-                class="d-block w-100 img-fluid opacity-75"
+                className="d-block w-100 img-fluid opacity-75"
                 alt="..."
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <h1 className="fa-5x">
                   “The best among you are those who bring the greatest benefit
                   to others”
@@ -339,13 +106,13 @@ const GuestUser = () => {
                 </button>
               </div>
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <img
                 src={require("../assets/images/flood.jpg")}
-                class="d-block w-100 img-fluid opacity-75"
+                className="d-block w-100 img-fluid opacity-75"
                 alt="..."
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <h1 className="fa-5x">
                   “The best among you are those who bring the greatest benefit
                   to others”
@@ -357,28 +124,28 @@ const GuestUser = () => {
             </div>
           </div>
           <button
-            class="carousel-control-prev"
+            className="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev"
           >
             <span
-              class="carousel-control-prev-icon btn btn-primary rounded-circle"
+              className="carousel-control-prev-icon btn btn-primary rounded-circle"
               aria-hidden="true"
             ></span>
-            <span class="visually-hidden">Previous</span>
+            <span className="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next"
+            className="carousel-control-next"
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide="next"
           >
             <span
-              class="carousel-control-next-icon btn btn-primary rounded-circle"
+              className="carousel-control-next-icon btn btn-primary rounded-circle"
               aria-hidden="true"
             ></span>
-            <span class="visually-hidden">Next</span>
+            <span className="visually-hidden">Next</span>
           </button>
           <div
             className="container position-absolute translate-middle start-50 hero-items"
@@ -399,6 +166,11 @@ const GuestUser = () => {
                           src={require("../assets/images/charity.png")}
                           alt=""
                           className="img-fluid"
+                          style={{
+                            maxWidth: "150px",
+                            width: "100%",
+                            height: "90px",
+                          }}
                         />
                       </div>
                     </div>
@@ -422,6 +194,11 @@ const GuestUser = () => {
                           src={require("../assets/images/dollar.png")}
                           alt=""
                           className="img-fluid"
+                          style={{
+                            maxWidth: "150px",
+                            width: "100%",
+                            height: "90px",
+                          }}
                         />
                       </div>
                     </div>
@@ -445,6 +222,11 @@ const GuestUser = () => {
                           src={require("../assets/images/care.png")}
                           alt=""
                           className="img-fluid"
+                          style={{
+                            maxWidth: "150px",
+                            width: "100%",
+                            height: "90px",
+                          }}
                         />
                       </div>
                     </div>
@@ -587,16 +369,16 @@ const GuestUser = () => {
               <div className="card mb-3">
                 <img
                   src={require("../assets/images/project-img.png")}
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="..."
                 />
-                <div class="card-body bg-success text-center">
-                  <h5 class="card-title">Flood Relief</h5>
-                  <p class="card-text">
+                <div className="card-body bg-success text-center">
+                  <h5 className="card-title">Flood Relief</h5>
+                  <p className="card-text">
                     Loss of household incomes, assets, rising food prices, and
                     disease outbreaks are impacting the most vulnerable groups.
                   </p>
-                  <a href="#" class="btn btn-primary">
+                  <a href="#" className="btn btn-primary">
                     READ MORE
                   </a>
                 </div>
@@ -606,16 +388,16 @@ const GuestUser = () => {
               <div className="card mb-3">
                 <img
                   src={require("../assets/images/project-img.png")}
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="..."
                 />
-                <div class="card-body bg-success text-center">
-                  <h5 class="card-title">Flood Relief</h5>
-                  <p class="card-text">
+                <div className="card-body bg-success text-center">
+                  <h5 className="card-title">Flood Relief</h5>
+                  <p className="card-text">
                     Loss of household incomes, assets, rising food prices, and
                     disease outbreaks are impacting the most vulnerable groups.
                   </p>
-                  <a href="#" class="btn btn-primary">
+                  <a href="#" className="btn btn-primary">
                     READ MORE
                   </a>
                 </div>
@@ -625,16 +407,16 @@ const GuestUser = () => {
               <div className="card mb-3">
                 <img
                   src={require("../assets/images/project-img.png")}
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="..."
                 />
-                <div class="card-body bg-success text-center">
-                  <h5 class="card-title">Flood Relief</h5>
-                  <p class="card-text">
+                <div className="card-body bg-success text-center">
+                  <h5 className="card-title">Flood Relief</h5>
+                  <p className="card-text">
                     Loss of household incomes, assets, rising food prices, and
                     disease outbreaks are impacting the most vulnerable groups.
                   </p>
-                  <a href="#" class="btn btn-primary">
+                  <a href="#" className="btn btn-primary">
                     READ MORE
                   </a>
                 </div>
@@ -643,7 +425,7 @@ const GuestUser = () => {
           </div>
           <div className="text-center">
             <Link to="" className="text-white text-decoration-none fw-bold">
-              <i class="fa-solid fa-plus"></i> View All
+              <i className="fa-solid fa-plus"></i> View All
             </Link>
           </div>
         </div>
@@ -663,7 +445,7 @@ const GuestUser = () => {
           <div className="row g-1 justify-content-evenly">
             <div className="col-md-3">
               <div className="card mb-3 rounded-4">
-                <div class="card-body text-center text-light">
+                <div className="card-body text-center text-light">
                   <div className="text-center mb-3">
                     <img
                       src={require("../assets/logos/alkhidmat.png")}
@@ -671,14 +453,14 @@ const GuestUser = () => {
                       className="img-fluid w-25 rounded-circle"
                     />
                   </div>
-                  <h5 class="card-title">Flood Relief</h5>
-                  <p class="card-text">
+                  <h5 className="card-title">Flood Relief</h5>
+                  <p className="card-text">
                     Loss of household incomes, assets, rising food prices, and
                     disease outbreaks are impacting the most vulnerable groups.
                   </p>
                   <a
                     href="#"
-                    class="btn btn-primary fw-bold text-white rounded-pill"
+                    className="btn btn-primary fw-bold text-white rounded-pill"
                   >
                     READ MORE
                   </a>
@@ -687,7 +469,7 @@ const GuestUser = () => {
             </div>
             <div className="col-md-3">
               <div className="card mb-3 rounded-4">
-                <div class="card-body text-center text-light">
+                <div className="card-body text-center text-light">
                   <div className="text-center mb-3">
                     <img
                       src={require("../assets/logos/alkhidmat.png")}
@@ -695,14 +477,14 @@ const GuestUser = () => {
                       className="img-fluid w-25 rounded-circle"
                     />
                   </div>
-                  <h5 class="card-title">Flood Relief</h5>
-                  <p class="card-text">
+                  <h5 className="card-title">Flood Relief</h5>
+                  <p className="card-text">
                     Loss of household incomes, assets, rising food prices, and
                     disease outbreaks are impacting the most vulnerable groups.
                   </p>
                   <a
                     href="#"
-                    class="btn btn-primary fw-bold text-white rounded-pill"
+                    className="btn btn-primary fw-bold text-white rounded-pill"
                   >
                     READ MORE
                   </a>
@@ -711,7 +493,7 @@ const GuestUser = () => {
             </div>
             <div className="col-md-3">
               <div className="card mb-3 rounded-4">
-                <div class="card-body text-center text-light">
+                <div className="card-body text-center text-light">
                   <div className="text-center mb-3">
                     <img
                       src={require("../assets/logos/alkhidmat.png")}
@@ -719,14 +501,14 @@ const GuestUser = () => {
                       className="img-fluid w-25 rounded-circle"
                     />
                   </div>
-                  <h5 class="card-title">Flood Relief</h5>
-                  <p class="card-text">
+                  <h5 className="card-title">Flood Relief</h5>
+                  <p className="card-text">
                     Loss of household incomes, assets, rising food prices, and
                     disease outbreaks are impacting the most vulnerable groups.
                   </p>
                   <a
                     href="#"
-                    class="btn btn-primary fw-bold text-white rounded-pill"
+                    className="btn btn-primary fw-bold text-white rounded-pill"
                   >
                     READ MORE
                   </a>
@@ -736,10 +518,10 @@ const GuestUser = () => {
           </div>
           <div className="text-center">
             <button id="prev" type="button" className="btn mx-1">
-              <i class="fa-solid fa-angle-left fs-3 fw-bold text-info"></i>
+              <i className="fa-solid fa-angle-left fs-3 fw-bold text-info"></i>
             </button>
             <button id="next" type="button" className="btn mx-1">
-              <i class="fa-solid fa-angle-right fs-3 fw-bold"></i>
+              <i className="fa-solid fa-angle-right fs-3 fw-bold"></i>
             </button>
           </div>
         </div>
@@ -763,28 +545,28 @@ const GuestUser = () => {
                     className="text-decoration-none text-light mx-2"
                     target="_blank"
                   >
-                    <i class="fa-brands fa-facebook fs-2"></i>
+                    <i className="fa-brands fa-facebook fs-2"></i>
                   </a>
                   <a
                     href="#"
                     className="text-decoration-none text-light mx-2"
                     target="_blank"
                   >
-                    <i class="fa-brands fa-twitter fs-2"></i>
+                    <i className="fa-brands fa-twitter fs-2"></i>
                   </a>
                   <a
                     href="#"
                     className="text-decoration-none text-light mx-2"
                     target="_blank"
                   >
-                    <i class="fa-brands fa-linkedin  fs-2"></i>
+                    <i className="fa-brands fa-linkedin  fs-2"></i>
                   </a>
                   <a
                     href="#"
                     className="text-decoration-none text-light mx-2"
                     target="_blank"
                   >
-                    <i class="fa-brands fa-instagram fs-2"></i>
+                    <i className="fa-brands fa-instagram fs-2"></i>
                   </a>
                 </p>
               </div>
@@ -792,28 +574,28 @@ const GuestUser = () => {
 
             <div className="col-md-2">
               <h3 className="text-white">Pages</h3>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item bg-transparent border-0 px-0 pb-0">
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item bg-transparent border-0 px-0 pb-0">
                   <Link to="#" className="text-decoration-none text-white">
                     Join Us
                   </Link>
                 </li>
-                <li class="list-group-item bg-transparent border-0 px-0 pb-0">
+                <li className="list-group-item bg-transparent border-0 px-0 pb-0">
                   <Link to="#" className="text-decoration-none text-white">
                     Services
                   </Link>
                 </li>
-                <li class="list-group-item bg-transparent border-0 px-0 pb-0">
+                <li className="list-group-item bg-transparent border-0 px-0 pb-0">
                   <Link to="#" className="text-decoration-none text-white">
                     About Us
                   </Link>
                 </li>
-                <li class="list-group-item bg-transparent border-0 px-0 pb-0">
+                <li className="list-group-item bg-transparent border-0 px-0 pb-0">
                   <Link to="#" className="text-decoration-none text-white">
                     Sign in
                   </Link>
                 </li>
-                <li class="list-group-item bg-transparent border-0 px-0 pb-0">
+                <li className="list-group-item bg-transparent border-0 px-0 pb-0">
                   <Link to="#" className="text-decoration-none text-white">
                     Donate
                   </Link>
@@ -823,38 +605,38 @@ const GuestUser = () => {
 
             <div className="col-md-2">
               <h3 className="text-white">Services</h3>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item bg-transparent border-0 px-0 pb-0">
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item bg-transparent border-0 px-0 pb-0">
                   <Link to="#" className="text-decoration-none text-white">
                     Disaster Management
                   </Link>
                 </li>
-                <li class="list-group-item bg-transparent border-0 px-0 pb-0">
+                <li className="list-group-item bg-transparent border-0 px-0 pb-0">
                   <Link to="#" className="text-decoration-none text-white">
                     Health Services
                   </Link>
                 </li>
-                <li class="list-group-item bg-transparent border-0 px-0 pb-0">
+                <li className="list-group-item bg-transparent border-0 px-0 pb-0">
                   <Link to="#" className="text-decoration-none text-white">
                     Free Education
                   </Link>
                 </li>
-                <li class="list-group-item bg-transparent border-0 px-0 pb-0">
+                <li className="list-group-item bg-transparent border-0 px-0 pb-0">
                   <Link to="#" className="text-decoration-none text-white">
                     Clean Water
                   </Link>
                 </li>
-                <li class="list-group-item bg-transparent border-0 px-0 pb-0">
+                <li className="list-group-item bg-transparent border-0 px-0 pb-0">
                   <Link to="#" className="text-decoration-none text-white">
                     Orphan Care
                   </Link>
                 </li>
-                <li class="list-group-item bg-transparent border-0 px-0 pb-0">
+                <li className="list-group-item bg-transparent border-0 px-0 pb-0">
                   <Link to="#" className="text-decoration-none text-white">
                     Community Services
                   </Link>
                 </li>
-                <li class="list-group-item bg-transparent border-0 px-0 pb-0">
+                <li className="list-group-item bg-transparent border-0 px-0 pb-0">
                   <Link to="#" className="text-decoration-none text-white">
                     Tree Plantation
                   </Link>
@@ -874,6 +656,7 @@ const GuestUser = () => {
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
+                title=""
               />
             </div>
           </div>
