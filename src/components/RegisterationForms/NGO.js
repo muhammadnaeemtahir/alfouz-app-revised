@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 const NGO = () => {
   return (
     <>
-      <main className="container mt-5">
+      <main className="container my-5">
         <div className="col-md-9 mx-auto">
-          <div className="card rounded-4 card-gradient p-md-5 p-3">
-            <div className="card-header">
+          <div className="card rounded-4 p-md-5 p-3">
+            <div className="card-header card-gradient">
               <div className="text-center">
                 <img
                   src={require("../../assets/logos/logo.png")}
@@ -16,141 +16,134 @@ const NGO = () => {
               </div>
             </div>
             <div className="card-body">
-              <form className="row g-3 needs-validation" noValidate>
-                <div className="col-md-4">
-                  <label
-                    htmlFor="validationCustom01"
-                    className="form-label text-light"
-                  >
-                    First name
-                  </label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="validationCustom01"
-                    defaultValue="Mark"
-                    required
-                  />
-                  <div className="valid-feedback">Looks good!</div>
-                </div>
-                <div className="col-md-4">
-                  <label
-                    htmlFor="validationCustom02"
-                    className="form-label text-light"
-                  >
-                    Last name
-                  </label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="validationCustom02"
-                    defaultValue="Otto"
-                    required
-                  />
-                  <div className="valid-feedback">Looks good!</div>
-                </div>
-                <div className="col-md-4">
-                  <label
-                    htmlFor="validationCustomUsername"
-                    className="form-label text-light"
-                  >
-                    Username
-                  </label>
-                  <div className="input-group has-validation">
-                    <span className="input-group-text" id="inputGroupPrepend">
-                      @
-                    </span>
+              <form className="row g-3">
+                <div className="col-md-6">
+                  <div className="mb-3">
+                    <label htmlFor="ngo_name" className="form-label">
+                      NGO Name<span className="text-danger">*</span>
+                    </label>
                     <input
                       type="text"
-                      className="form-control"
-                      id="validationCustomUsername"
-                      aria-describedby="inputGroupPrepend"
+                      name="ngo_name"
+                      id=""
+                      className="form-control bg-light border-dark border border-2"
+                      placeholder="Enter NGO name"
                       required
                     />
-                    <div className="invalid-feedback">
-                      Please choose a username.
-                    </div>
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <label
-                    htmlFor="validationCustom03"
-                    className="form-label text-light"
-                  >
-                    City
-                  </label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="validationCustom03"
-                    required
-                  />
-                  <div className="invalid-feedback">
-                    Please provide a valid city.
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <label
-                    htmlFor="validationCustom04"
-                    className="form-label text-light"
-                  >
-                    State
-                  </label>
-                  <select
-                    className="form-select"
-                    id="validationCustom04"
-                    required
-                  >
-                    <option selected disabled value="">
-                      Choose...
-                    </option>
-                    <option>...</option>
-                  </select>
-                  <div className="invalid-feedback">
-                    Please select a valid state.
-                  </div>
-                </div>
-                <div className="col-md-3">
-                  <label
-                    htmlFor="validationCustom05"
-                    className="form-label text-light"
-                  >
-                    Zip
-                  </label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="validationCustom05"
-                    required
-                  />
-                  <div className="invalid-feedback">
-                    Please provide a valid zip.
-                  </div>
-                </div>
-                <div className="col-12">
-                  <div className="form-check">
+                  <div className="mb-3">
+                    <label htmlFor="reg_number" className="form-label">
+                      Registeration Number{" "}
+                      <span className="text-secondary">(optional)</span>
+                    </label>
                     <input
-                      className="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="invalidCheck"
+                      type="text"
+                      name="reg_number"
+                      id=""
+                      className="form-control bg-light border-dark border border-2"
+                      placeholder="Enter NGO registeration number"
+                    />
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="mb-3">
+                    <label htmlFor="address" className="form-label">
+                      Location (Address)<span className="text-danger">*</span>
+                    </label>
+                    <textarea
+                      name="address"
+                      className="form-control bg-light border-dark border border-2"
+                      id=""
+                      cols="30"
+                      rows="1"
+                      placeholder="Enter NGO address"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="mb-3">
+                    <label htmlFor="email" className="form-label">
+                      Email<span className="text-danger">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      name="email"
+                      id=""
+                      className="form-control bg-light border-dark border border-2"
+                      placeholder="i.e. name@email.com"
                       required
                     />
-                    <label
-                      className="form-check-label text-light"
-                      htmlFor="invalidCheck"
-                    >
-                      Agree to terms and conditions
-                    </label>
-                    <div className="invalid-feedback">
-                      You must agree before submitting.
-                    </div>
                   </div>
                 </div>
-                <div className="col-12">
-                  <button className="btn btn-primary" type="submit">
-                    Register
-                  </button>
+                <div className="col-md-6">
+                  <div className="mb-3">
+                    <label htmlFor="password" className="form-label">
+                      Password<span className="text-danger">*</span>
+                    </label>
+                    <input
+                      type="password"
+                      name="password"
+                      id=""
+                      className="form-control bg-light border-dark border border-2"
+                      placeholder="Enter a password"
+                      required
+                    />
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="mb-3">
+                    <label htmlFor="confirm_password" className="form-label">
+                      Confirm Password<span className="text-danger">*</span>
+                    </label>
+                    <input
+                      type="password"
+                      name="confirm_password"
+                      id=""
+                      className="form-control bg-light border-dark border border-2"
+                      placeholder="Retype your password"
+                      required
+                    />
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="mb-3">
+                    <label htmlFor="phone_number" className="form-label">
+                      Phone Number<span className="text-danger">*</span>
+                    </label>
+                    <input
+                      type="tel"
+                      name="phone_number"
+                      id=""
+                      className="form-control bg-light border-dark border border-2"
+                      placeholder="Enter your phone number"
+                      require
+                    />
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="mb-3">
+                    <label htmlFor="certificate" className="form-label">
+                      Registeration Certificate{" "}
+                      <span className="text-secondary">(optional)</span>
+                    </label>
+                    <input
+                      type="file"
+                      name="certificate"
+                      id=""
+                      className="form-control bg-light border-dark border border-2"
+                    />
+                  </div>
+                </div>
+
+                <div className="col-md-6 ms-auto">
+                  <div className="mt-3">
+                    <button className="btn btn-primary w-100" type="submit">
+                      Register
+                    </button>
+                  </div>
                 </div>
               </form>
             </div>
