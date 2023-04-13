@@ -120,16 +120,16 @@ const NGOProfile = () => {
                 services in Pakistan.
               </p>
               <div className="d-flex justify-content-evenly">
-                <a href="" className="text-decoration-none text-muted">
+                <a className="text-decoration-none text-muted">
                   <i className="fa-brands fa-square-facebook fs-3"></i>
                 </a>
-                <a href="" className="text-decoration-none text-muted">
+                <a className="text-decoration-none text-muted">
                   <i className="fa-brands fa-square-instagram fs-3"></i>
                 </a>
-                <a href="" className="text-decoration-none text-muted">
+                <a className="text-decoration-none text-muted">
                   <i className="fa-brands fa-square-twitter fs-3"></i>
                 </a>
-                <a href="" className="text-decoration-none text-muted">
+                <a className="text-decoration-none text-muted">
                   <i className="fa-brands fa-linkedin fs-3"></i>
                 </a>
               </div>
@@ -148,7 +148,7 @@ const NGOProfile = () => {
                   </a>
                 </li>
                 <li className="list-group-item bg-transparent border-0">
-                  <a href="" className="text-decoration-none text-muted">
+                  <a className="text-decoration-none text-muted">
                     <i className="fa-solid fa-location-dot"></i> xyz, ABC
                   </a>
                 </li>

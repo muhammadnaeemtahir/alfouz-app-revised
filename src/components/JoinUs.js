@@ -19,7 +19,7 @@ const JoinUs = () => {
         <div className="container">
           <h1 className="text-center text-white mb-md-5 mb-3">
             Join{" "}
-            <Link to="" to="/" className="text-decoration-none text-info">
+            <Link to="/" className="text-decoration-none text-info">
               Al-Fouz
             </Link>
           </h1>
