@@ -2,6 +2,8 @@ import { Routes, Route } from "react-router-dom";
 
 // components
 import GuestUser from "./components/GuestUser";
+import About from "./components/About";
+import Services from "./components/Services";
 import Logins from "./components/Logins";
 import JoinUs from "./components/JoinUs";
 import Admin from "./components/LoginForms/Admin";
@@ -18,6 +20,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<GuestUser />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/logins" element={<Logins />} />
         <Route path="/join-us" element={<JoinUs />} />
         <Route path="/admin-login" element={<Admin />} />

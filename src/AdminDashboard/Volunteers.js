@@ -49,7 +49,12 @@ const Volunteers = () => {
                 <td className="h5 text-nowrap">0315-095456</td>
                 <td className="h5 text-nowrap">Street # 3, Rawalpindi</td>
                 <td>
-                  <Link className="btn btn-danger text-uppercase">See All</Link>
+                  <Link
+                    to="/admin-dashboard/all-projects"
+                    className="btn btn-danger text-uppercase"
+                  >
+                    See All
+                  </Link>
                 </td>
                 <td>
                   <form action="" method="get">

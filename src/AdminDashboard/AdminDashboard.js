@@ -15,18 +15,28 @@ import Grant from "./Grant";
 import NGOs from "./NGOs";
 import AllProjects from "./AllProjects";
 import AddProjects from "./AddProject";
+import NGOProfile from "../NGODashboard/NGOProfile";
 
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 const AdminDashboard = () => {
+  const location = useLocation();
+  const currentRoute = location.pathname;
+
   return (
     <>
       <Header />
       <div className="container-fluid g-0" style={{ minHeight: "100dvh" }}>
         <div className="row g-0" style={{ minHeight: "100dvh" }}>
-          <div className="col-md-3 d-md-block d-none">
-            <Navbar />
-          </div>
+          {currentRoute !== "/admin-dashboard/ngo-profile" && (
+            <div className="col-md-3 d-md-block d-none">
+              <Navbar />
+            </div>
+          )}
+
+          <Routes>
+            <Route path="/ngo-profile" element={<NGOProfile />} />
+          </Routes>
 
           <div className="col-md-9">
             <main className="">

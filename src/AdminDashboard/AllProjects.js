@@ -53,7 +53,10 @@ const AllProjects = () => {
                   </select>
                 </td>
                 <td className="text-center">
-                  <Link to="" className="btn btn-warning tex-uppercase">
+                  <Link
+                    to="/admin-dashboard/volunteers"
+                    className="btn btn-warning tex-uppercase"
+                  >
                     See All
                   </Link>
                 </td>

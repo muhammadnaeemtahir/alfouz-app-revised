@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const JoinUs = () => {
   return (
     <>
-      <header className="bg-primary bg-opacity-50">
+      <header className="">
         <div className="container">
           <div className="text-md-start text-center">
             <img
@@ -26,8 +26,8 @@ const JoinUs = () => {
           <div className="row justify-content-evenly">
             <div className="col-sm-5">
               <div className="mb-md-0 mb-3">
-                <div class="card card-gradient rounded-4">
-                  <div class="card-body text-white">
+                <div class="card  rounded-4">
+                  <div class="card-body">
                     <h4 class="card-title text-center">NGO</h4>
                     <p class="card-text">
                       Some quick example text to build on the card title and
@@ -47,8 +47,8 @@ const JoinUs = () => {
             </div>
             <div className="col-sm-5">
               <div className="mb-md-0 mb-3">
-                <div class="card card-gradient rounded-4">
-                  <div class="card-body text-white">
+                <div class="card  rounded-4">
+                  <div class="card-body">
                     <h4 class="card-title text-center">Volunteer</h4>
                     <p class="card-text">
                       Some quick example text to build on the card title and

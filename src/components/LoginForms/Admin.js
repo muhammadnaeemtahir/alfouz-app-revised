@@ -5,8 +5,8 @@ const Admin = () => {
     <>
       <main className="container mt-5">
         <div className="col-md-6 col-sm-9 col-10 mx-auto">
-          <div className="card rounded-4 card-gradient p-md-5 p-3">
-            <div className="card-header">
+          <div className="card rounded-4 p-md-5 p-3">
+            <div className="card-header card-gradient">
               <div className="text-center">
                 <img
                   src={require("../../assets/logos/logo.png")}
@@ -16,14 +16,11 @@ const Admin = () => {
               </div>
             </div>
             <div className="card-body">
-              <form className="needs-validation" novalidate>
+              <form>
                 <div className="row">
                   <div className="col-12">
                     <div className="mb-3">
-                      <label
-                        for="validationCustom01"
-                        class="form-label text-light"
-                      >
+                      <label for="validationCustom01" class="form-label">
                         Email / Username
                       </label>
                       <input
@@ -39,10 +36,7 @@ const Admin = () => {
                   </div>
                   <div className="col-12">
                     <div className="mb-3">
-                      <label
-                        for="validationCustom03"
-                        class="form-label text-light"
-                      >
+                      <label for="validationCustom03" class="form-label">
                         Password
                       </label>
                       <input
