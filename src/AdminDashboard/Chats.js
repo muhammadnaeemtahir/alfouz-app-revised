@@ -102,7 +102,7 @@ const Chats = () => {
               <div className="col-md-2">
                 <div className="mb-md-0 mb-3">
                   <Link
-                    to="/admin-dashboard/ngo-chats"
+                    to="/admin-dashboard/volunteer-chats"
                     className="btn btn-primary w-100"
                   >
                     <i className="fa-solid fa-plus me-1"></i>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const ViewRequests = () => {
+const ViewVolunteerRequests = () => {
   return (
     <>
       <div className="container-fluid bg-dark-gray my-md-3 p-md-3 p-2 mb-3">
@@ -64,4 +64,4 @@ const ViewRequests = () => {
   );
 };
 
-export default ViewRequests;
+export default ViewVolunteerRequests;

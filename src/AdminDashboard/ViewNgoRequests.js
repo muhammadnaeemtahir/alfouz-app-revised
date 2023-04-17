@@ -1,19 +1,19 @@
 import { Link } from "react-router-dom";
 
-const Volunteers = () => {
+const ViewNgoRequests = () => {
   return (
     <>
       <div className="container-fluid bg-dark-gray my-md-3 p-md-3 p-2 mb-3">
         <div className="row align-items-center g-0">
           <div className="col-md-1 col-2">
             <img
-              src={require("../assets/images/volunteers-pg.png")}
+              src={require("../assets/icons/requests-icon.png")}
               alt="alt-text"
               className="img-fluid"
             />
           </div>
           <div className="col-md-11 col-10">
-            <h1 className="fw-bold text-white mb-0">Volunteers</h1>
+            <h1 className="fw-bold text-white mb-0">Requests</h1>
           </div>
         </div>
       </div>
@@ -28,11 +28,10 @@ const Volunteers = () => {
                   Name
                 </th>
                 <th className="fw-bold border-start border-end h5 py-3">
-                  Contact No.
+                  Phone
                 </th>
                 <th className="fw-bold h5 py-3">Address</th>
-                <th className="fw-bold h5 py-3">Projects</th>
-                <th className="fw-bold h5 py-3">User Status</th>
+                <th className="fw-bold h5 py-3 text-center">Action</th>
               </tr>
             </thead>
             <tbody>
@@ -48,23 +47,13 @@ const Volunteers = () => {
                 </td>
                 <td className="h5 text-nowrap">0315-095456</td>
                 <td className="h5 text-nowrap">Street # 3, Rawalpindi</td>
-                <td>
-                  <Link
-                    to="/admin-dashboard/volunteer-projects"
-                    className="btn btn-danger text-uppercase"
-                  >
-                    See All
-                  </Link>
-                </td>
-                <td>
-                  <form action="" method="get">
-                    <select name="" id="" className="form-select bg-info">
-                      <option value="1" selected>
-                        Enabled
-                      </option>
-                      <option value="2">Disabled</option>
-                    </select>
-                  </form>
+                <td className="text-center">
+                  <button className="btn btn-primary mx-1 text-uppercase">
+                    Approve
+                  </button>
+                  <button className="btn btn-danger mx-1 text-uppercase">
+                    Reject
+                  </button>
                 </td>
               </tr>
             </tbody>
@@ -75,4 +64,4 @@ const Volunteers = () => {
   );
 };
 
-export default Volunteers;
+export default ViewNgoRequests;

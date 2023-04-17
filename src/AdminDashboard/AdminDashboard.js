@@ -6,14 +6,19 @@ import Customization from "./Customization";
 import FAQ from "./FAQ";
 import Chats from "./Chats";
 import NGOChats from "./NGOChats";
+import VolunteerChats from "./VolunteerChats";
 import Chat from "./Chat";
 import Volunteers from "./Volunteers";
 import Requests from "./Requests";
-import ViewRequests from "./ViewRequests";
+import ViewNgoRequests from "./ViewNgoRequests";
+import ViewVolunteerRequests from "./ViewVolunteerRequests";
+import ProjectRequests from "./ProjectRequests";
 import CSP from "./CSP";
 import Grant from "./Grant";
 import NGOs from "./NGOs";
 import AllProjects from "./AllProjects";
+import NGOProjects from "./NGOProjects";
+import VolunteerProjects from "./VolunteerProjects";
 import AddProjects from "./AddProject";
 import NGOProfile from "../NGODashboard/NGOProfile";
 
@@ -46,15 +51,30 @@ const AdminDashboard = () => {
                 <Route path="/add-faq" element={<FAQ />} />
                 <Route path="/chats" element={<Chats />} />
                 <Route path="/ngo-chats" element={<NGOChats />} />
+                <Route path="/volunteer-chats" element={<VolunteerChats />} />
                 <Route path="/chat" element={<Chat />} />
                 <Route path="/volunteers" element={<Volunteers />} />
                 <Route path="/requests" element={<Requests />} />
-                <Route path="/view-requests" element={<ViewRequests />} />
+                <Route path="/view-ngo-request" element={<ViewNgoRequests />} />
+                <Route
+                  path="/view-volunteer-request"
+                  element={<ViewVolunteerRequests />}
+                />
+                <Route
+                  path="/project-launch-request"
+                  element={<ProjectRequests />}
+                />
                 <Route path="/csp-requests" element={<CSP />} />
                 <Route path="/grant-points" element={<Grant />} />
                 <Route path="/ngos" element={<NGOs />} />
                 <Route path="/all-projects" element={<AllProjects />} />
+                <Route path="/ngo-projects" element={<NGOProjects />} />
+                <Route
+                  path="/volunteer-projects"
+                  element={<VolunteerProjects />}
+                />
                 <Route path="/add-projects" element={<AddProjects />} />
+                <Route path="/csp-point-request" element={<CSP />} />
               </Routes>
             </main>
           </div>

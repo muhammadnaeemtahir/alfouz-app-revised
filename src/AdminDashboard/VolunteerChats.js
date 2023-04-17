@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const NGOChats = () => {
+const VolunteerChats = () => {
   return (
     <>
       <div className="container-fluid bg-dark-gray my-md-3 p-md-3 p-2 mb-3">
@@ -41,7 +41,7 @@ const NGOChats = () => {
                 <div className="col-md-9">
                   <div className="mb-md-0 mb-3">
                     <h3 className="text-md-start text-center">
-                      Alkhidmat Foundation
+                      Shahzaib Ahmed
                     </h3>
                   </div>
                 </div>
@@ -54,4 +54,4 @@ const NGOChats = () => {
   );
 };
 
-export default NGOChats;
+export default VolunteerChats;

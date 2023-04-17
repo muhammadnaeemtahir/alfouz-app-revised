@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Requests = () => {
+const ngoJoinRequest = () => {
   return (
     <>
       <div className="container-fluid bg-dark-gray my-md-3 p-md-3 p-2 mb-3">
@@ -44,7 +44,7 @@ const Requests = () => {
               <div className="col-md-2">
                 <div className="mb-md-0 mb-3">
                   <Link
-                    to="/admin-dashboard/view-requests"
+                    to="/admin-dashboard/view-ngo-request"
                     className="btn btn-primary w-100"
                   >
                     SEE ALL
@@ -72,7 +72,7 @@ const Requests = () => {
               <div className="col-md-2">
                 <div className="mb-md-0 mb-3">
                   <Link
-                    to="/admin-dashboard/view-requests"
+                    to="/admin-dashboard/view-volunteer-request"
                     className="btn btn-primary w-100"
                   >
                     SEE ALL
@@ -100,7 +100,7 @@ const Requests = () => {
               <div className="col-md-2">
                 <div className="mb-md-0 mb-3">
                   <Link
-                    to="/admin-dashboard/view-requests"
+                    to="/admin-dashboard/project-launch-request"
                     className="btn btn-primary w-100"
                   >
                     SEE ALL
@@ -128,7 +128,7 @@ const Requests = () => {
               <div className="col-md-2">
                 <div className="mb-md-0 mb-3">
                   <Link
-                    to="/admin-dashboard/view-requests"
+                    to="/admin-dashboard/csp-point-request"
                     className="btn btn-primary w-100"
                   >
                     SEE ALL
@@ -143,4 +143,4 @@ const Requests = () => {
   );
 };
 
-export default Requests;
+export default ngoJoinRequest;
